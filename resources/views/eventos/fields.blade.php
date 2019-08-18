@@ -25,15 +25,18 @@
 <!-- Data Field -->
 <div class="form-group col-sm-6">
     {!! Form::label('data', 'Data:') !!}
-    {!! Form::date('data', null, ['class' => 'form-control','id'=>'data']) !!}
+    {!! Form::date('data', null, ['class' => 'form-control','id'=>'datepicker']) !!}
 </div>
 
 @section('scripts')
-    <script type="text/javascript">
-        $('#data').datetimepicker({
-            format: 'YYYY-MM-DD HH:mm:ss',
-            useCurrent: false
-        })
+<script src="{{ url('js/datepicker.js') }}"></script>
+    <script src="{{ url('js/timepicker.js') }}"></script>
+    <script>
+        //Timepicker
+            $('.timepicker').timepicker({
+                showInputs: false,
+                timeFormat: 'HH:mm:ss'
+            })
     </script>
 @endsection
 

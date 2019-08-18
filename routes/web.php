@@ -29,3 +29,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 Route::resource('eventos', 'EventoController');
+
+Route::resource('alunos', 'AlunoController');
+
+Route::resource('participantes', 'ParticipanteController');
