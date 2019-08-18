@@ -20,6 +20,7 @@ class CreateEventoTable extends Migration
             $table->string('descricao')->nullable();
             $table->string('infoLocal')->nullable();
             $table->date('data')->nullable();
+            $table->time('hora')->nullable();
             $table->integer('horasComplementares')->nullable();
             $table->integer('capacidade')->nullable();
             $table->timestamps();

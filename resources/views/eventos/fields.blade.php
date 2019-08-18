@@ -28,6 +28,12 @@
     {!! Form::date('data', null, ['class' => 'form-control','id'=>'datepicker']) !!}
 </div>
 
+<!-- Hora Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('hata', 'Hora:') !!}
+    {!! Form::time('hata', null, ['class' => 'form-control timepicker','id'=>'timepicker']) !!}
+</div>
+
 @section('scripts')
 <script src="{{ url('js/datepicker.js') }}"></script>
     <script src="{{ url('js/timepicker.js') }}"></script>

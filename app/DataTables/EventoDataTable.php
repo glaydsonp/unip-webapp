@@ -48,7 +48,7 @@ class EventoDataTable extends DataTable
                 'stateSave' => true,
                 'order'     => [[0, 'desc']],
                 'buttons'   => [
-                    ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner',],
+                    ['extend' => 'create', 'className' => 'btn btn-default btn-sm no-corner', 'value' => 'Adicionar'],
                     ['extend' => 'export', 'className' => 'btn btn-default btn-sm no-corner',],
                     ['extend' => 'print', 'className' => 'btn btn-default btn-sm no-corner',],
                     ['extend' => 'reset', 'className' => 'btn btn-default btn-sm no-corner',],
@@ -70,6 +70,7 @@ class EventoDataTable extends DataTable
             'descricao',
             'infoLocal',
             'data',
+            'hora',
             'horasComplementares',
             'capacidade'
         ];

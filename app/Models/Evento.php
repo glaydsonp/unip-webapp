@@ -23,7 +23,7 @@ class Evento extends Model
     use SoftDeletes;
 
     public $table = 'evento';
-    
+
     const CREATED_AT = 'created_at';
     const UPDATED_AT = 'updated_at';
 
@@ -38,7 +38,8 @@ class Evento extends Model
         'infoLocal',
         'data',
         'horasComplementares',
-        'capacidade'
+        'capacidade',
+        'hora'
     ];
 
     /**
@@ -54,7 +55,8 @@ class Evento extends Model
         'infoLocal' => 'string',
         'data' => 'date',
         'horasComplementares' => 'integer',
-        'capacidade' => 'integer'
+        'capacidade' => 'integer',
+        'hora' => 'time'
     ];
 
     /**
@@ -67,5 +69,5 @@ class Evento extends Model
         'nomePalestrante' => 'required'
     ];
 
-    
+
 }

@@ -22,6 +22,7 @@ class EventoRepository extends BaseRepository
         'descricao',
         'infoLocal',
         'data',
+        'hora',
         'horasComplementares',
         'capacidade'
     ];
